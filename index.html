@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Basic HTML Boilerplate</title>
+    <!-- Link to External CSS File -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- App -->
+    <div id="appContainer" class="appContainer">
+      <div id="navBar" class="navBar">
+        <div id="navButton_home" data-targetpageid="homePage" class="navButton">
+          Home
+        </div>
+        <div
+          id="navButton_uxPage1"
+          data-targetpageid="uxPage1"
+          class="navButton"
+        >
+          Page 1
+        </div>
+        <div
+          id="navButton_uxPage2"
+          data-targetpageid="uxPage2"
+          class="navButton"
+        >
+          Page 2
+        </div>
+        <div
+          id="navButton_uxPage3"
+          data-targetpageid="uxPage3"
+          class="navButton"
+        >
+          Page 3
+        </div>
+        <div
+          id="navButton_uxPage4"
+          data-targetpageid="uxPage4"
+          class="navButton"
+        >
+          Page 4
+        </div>
+      </div>
+      <div id="navBarOffset" class="navBarOffset"></div>
+      <div id="pageContainer" class="pageContainer">
+        <div id="homePage" class="navPage homePage">Home</div>
+
+        <div>
+          <div id="uxPageBackButton" class="uxPageBackButton">Back</div>
+          <div id="uxPage1" class="navPage uxPage uxPage1">Page 1</div>
+          <div id="uxPage2" class="navPage uxPage uxPage2">Page 2</div>
+          <div id="uxPage3" class="navPage uxPage uxPage3">Page 3</div>
+          <div id="uxPage4" class="navPage uxPage uxPage4">Page 4</div>
+        </div>
+      </div>
+      <div id="footer" class="footer">Footer</div>
+    </div>
+    <!-- Link to External JavaScript File -->
+    <script src="script.js"></script>
+  </body>
+</html>

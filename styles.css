@@ -1,0 +1,55 @@
+/* Variables */
+:root {
+    --navBarHeight: 40;
+    --footerHeight: 100;
+}
+
+/* Structure */
+body {
+    margin: 0;
+    user-select: none;
+}
+
+.appContainer {
+    width: 100vw;
+    height: 100vh;
+    /* border: 1px solid red; */
+    outline: 1px solid red;
+    position: relative;
+}
+
+.navBar {
+    width: 100vw;
+    height: calc(var(--navBarHeight) * 1px);
+    outline: 1px solid blue;
+    position: fixed;
+    display: flex
+}
+
+.navButton {
+    cursor: pointer;
+}
+
+.navBarOffset {
+    height: calc(var(--navBarHeight) * 1px);
+}
+
+.uxPageBackButton {
+    display: none;
+    cursor: pointer;
+}
+
+.pageContainer {
+    min-height: calc(100% - var(--footerHeight)*1px - var(--navBarHeight)*1px);
+    outline: 1px solid green;
+}
+
+.uxPage {
+    display: none
+}
+
+.footer {
+
+    height: calc(var(--footerHeight) * 1px);
+    outline: 1px solid purple
+}
