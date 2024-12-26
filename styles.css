@@ -26,7 +26,12 @@ body {
     display: flex
 }
 
-.navButton {
+/* .navButton {
+    cursor: pointer;
+} */
+
+.navButton:hover {
+    background: red;
     cursor: pointer;
 }
 
@@ -34,9 +39,18 @@ body {
     height: calc(var(--navBarHeight) * 1px);
 }
 
+.uxPagesContainer {
+    display: none;
+}
+
 .uxPageBackButton {
     display: none;
+    /* cursor: pointer; */
+}
+
+.uxPageBackButton:hover {
     cursor: pointer;
+    background: red
 }
 
 .pageContainer {

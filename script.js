@@ -7,10 +7,19 @@ const navigateToPage = (targetPageId) => {
     targetPage.style.display = "block";
   }
   //Backbutton render
+  const uxPageBackButton = document.getElementById("uxPageBackButton");
   if (targetPageId === "homePage") {
     uxPageBackButton.style.display = "none";
   } else {
     uxPageBackButton.style.display = "block";
+  }
+
+  //UX Pages render
+  const uxPagesContainer = document.getElementById("uxPagesContainer");
+  if (targetPageId === "homePage") {
+    uxPagesContainer.style.display = "none";
+  } else {
+    uxPagesContainer.style.display = "block";
   }
 };
 
