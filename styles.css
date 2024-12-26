@@ -1,7 +1,7 @@
 /* Variables */
 :root {
     --navBarHeight: 40;
-    --footerHeight: 100;
+    --footerHeight: 40;
 }
 
 /* Structure */
@@ -16,6 +16,7 @@ body {
     /* border: 1px solid red; */
     outline: 1px solid red;
     position: relative;
+    overflow: auto;
 }
 
 .navBar {
@@ -63,7 +64,6 @@ body {
 }
 
 .footer {
-
     height: calc(var(--footerHeight) * 1px);
     outline: 1px solid purple
 }
