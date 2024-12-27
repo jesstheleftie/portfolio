@@ -27,6 +27,26 @@ body {
     display: flex
 }
 
+.showNav {
+    animation: showNav 0.3s forwards;
+}
+
+@keyframes showNav {
+    0% {
+        top: -60px;
+    }
+
+    60% {
+        top: -60px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+
+
 /* .navButton {
     cursor: pointer;
 } */

@@ -40,3 +40,36 @@ const initButtons = () => {
 };
 
 initButtons();
+let appContainer = document.getElementById("appContainer");
+let prevScrollpos = appContainer.scrollTop; // Use scrollTop instead of pageYOffset
+let downAnchor = appContainer.scrollTop; // Initialize downAnchor with scrollTop value
+
+appContainer.addEventListener("scroll", () => {
+  let currentScrollPos = appContainer.scrollTop; // Get current scroll position
+
+  console.log("prevScrollpos", prevScrollpos, "downAnchor", downAnchor);
+
+  if (prevScrollpos >= currentScrollPos) {
+    // Scrolling up
+    // Show navbar
+    document.getElementById("navBar").style = ""; // Reset any inline styles
+    document.getElementById("navBar").classList.add("showNav");
+
+    // Update downAnchor if scrolled past a certain point
+    if (currentScrollPos < 0) {
+      downAnchor = 0;
+    } else {
+      downAnchor = currentScrollPos;
+    }
+  } else if (currentScrollPos > downAnchor && currentScrollPos > 0) {
+    // Scrolling down
+    // Hide navbar if scrolling down past a certain point
+    document.getElementById("navBar").classList.remove("showNav");
+    document.getElementById("navBar").style.top = `-${
+      currentScrollPos - downAnchor
+    }px`;
+  }
+
+  // Update prevScrollpos to current scroll position
+  prevScrollpos = currentScrollPos;
+});
