@@ -103,3 +103,61 @@ body {
     height: calc(var(--footerHeight) * 1px);
     outline: 1px solid purple
 }
+
+
+.heroContainer {
+    height: 80vh;
+    border: 1px solid red
+}
+
+.sideGutter {
+    padding: 0 5vw;
+}
+
+
+.blurpContainer {
+    padding: 10px 0;
+
+}
+
+.technologyBoxContainer {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.technologyBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.technologyLogo {
+    width: 80px;
+    height: 80px;
+    border: 1px solid red
+}
+
+.webDevSection {
+    width: 100%;
+    border: 1px solid red;
+}
+
+.webDevProjectContainer {
+    display: flex;
+
+}
+
+.webDevProjectContainer {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.flexRev {
+    flex-direction: row-reverse;
+}
