@@ -20,6 +20,11 @@ const navigateToPage = (targetPageId) => {
     uxPagesContainer.style.display = "none";
   } else {
     uxPagesContainer.style.display = "block";
+    //scroll to top
+    // uxPagesContainer.scrollTo({
+    //   top: top,
+    //   behavior: "smooth",
+    // });
   }
 };
 
@@ -46,8 +51,6 @@ let downAnchor = appContainer.scrollTop; // Initialize downAnchor with scrollTop
 
 appContainer.addEventListener("scroll", () => {
   let currentScrollPos = appContainer.scrollTop; // Get current scroll position
-
-  console.log("prevScrollpos", prevScrollpos, "downAnchor", downAnchor);
 
   if (prevScrollpos >= currentScrollPos) {
     // Scrolling up
