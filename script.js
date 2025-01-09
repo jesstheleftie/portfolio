@@ -29,7 +29,7 @@ const navigateToPage = (targetPageId) => {
 };
 
 const initButtons = () => {
-  let navButtonArray = document.querySelectorAll(".navButton");
+  let navButtonArray = document.querySelectorAll(".eventButton");
   navButtonArray.forEach((eachElement) => {
     eachElement.addEventListener("click", (e) => {
       const targetPageId = eachElement.dataset.targetpageid;
@@ -76,3 +76,52 @@ appContainer.addEventListener("scroll", () => {
   // Update prevScrollpos to current scroll position
   prevScrollpos = currentScrollPos;
 });
+
+const scrollEvent = (elementId, top, target, style = "auto") => {
+  let appContainer = document.getElementById("appContainer");
+  const element = document.getElementById(elementId);
+  element.addEventListener("click", function () {
+    if (
+      element.classList.contains("about") ||
+      element.classList.contains("myLogo") ||
+      element.classList.contains("backToTop")
+    ) {
+      // appContainer.scrollTo({
+      //   top: 30,
+      //   behavior: "smooth",
+      // });
+      setTimeout(() => {
+        appContainer.scrollTo({
+          top: 0,
+          behavior: style,
+        });
+      }, 100);
+      // setTimeout(() => {
+      //   appContainer.scrollTo({
+      //     top: 0,
+      //     behavior: "smooth",
+      //   });
+      // }, 300);
+    }
+    // Normal but without target, goes to parameter 'top'
+    else if (!target) {
+      appContainer.scrollTo({
+        top: top,
+        behavior: style,
+      });
+    }
+    // with target element specified
+    else {
+      document
+        .getElementById(target)
+        .scrollIntoView({ block: "center", behavior: "smooth" });
+    }
+  });
+};
+
+scrollEvent("myLogo", 0, null, "smooth");
+scrollEvent("navButton_home", 0, null, "auto");
+scrollEvent("navButton_uxPage1", 0, null, "smooth");
+scrollEvent("navButton_uxPage2", 0, null, "smooth");
+scrollEvent("navButton_uxPage3", 0, null, "smooth");
+scrollEvent("navButton_uxPage4", 0, null, "smooth");

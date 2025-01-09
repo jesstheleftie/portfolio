@@ -1,13 +1,15 @@
 /* Variables */
 :root {
-    --navBarHeight: 60;
+    --navBarHeight: 65;
     --footerHeight: 40;
 }
+
 
 /* Structure */
 body {
     margin: 0;
     user-select: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 .appContainer {
@@ -17,6 +19,32 @@ body {
     outline: 1px solid red;
     position: relative;
     overflow: auto;
+}
+
+.myLogo {
+    position: fixed;
+    top: 0;
+    font-size: 15px;
+    padding: 15px;
+    padding-left: 20px;
+    color: var(--blackText);
+    /* background-color: var(--whiteTransparent); */
+    /* border: 1px solid var(--dystopianYellow); */
+    z-index: 2;
+    cursor: pointer;
+    font-weight: Bold;
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.myLogo:hover {
+    /* animation: hoverBlink 0.1s forwards; */
+}
+
+.logo {
+    height: 55px;
+    padding-right: 10px;
 }
 
 .navBar {
@@ -92,7 +120,7 @@ body {
 
 .pageContainer {
     min-height: calc(100% - var(--footerHeight)*1px - var(--navBarHeight)*1px);
-    outline: 1px solid green;
+    padding: 0 7vw;
 }
 
 .uxPage {
@@ -110,9 +138,6 @@ body {
     border: 1px solid red
 }
 
-.sideGutter {
-    padding: 0 5vw;
-}
 
 
 .blurpContainer {
@@ -160,4 +185,351 @@ body {
 
 .flexRev {
     flex-direction: row-reverse;
+}
+
+
+.uxAppContainerRow {
+    display: flex;
+    justify-content: center;
+}
+
+.uxAppCardButton {
+    cursor: pointer;
+    margin: 5px;
+}
+
+.uxAppCardButtonImage {
+    border-radius: 10px;
+    max-width: 40vw;
+}
+
+.uxAppCardButton:hover {
+    opacity: 0.8;
+}
+
+
+.projectContainer {}
+
+.projectMotto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mottoTitle {
+    font-size: 30px;
+    font-weight: 600;
+    /* font-weight: bold; */
+}
+
+.mottoContent {
+    font-size: 16px;
+    font-weight: bold;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-family: 'Nunito', 'Courier New', Courier, monospace;
+}
+
+.projectImageDetail {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.projectImage {
+    max-width: 250px;
+    width: 30vw;
+}
+
+.myRole {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.eachRole {
+    width: 25vw;
+}
+
+.descriptionCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.descriptionTitle {
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 16px;
+    z-index: 2;
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-family: 'Nunito', 'Courier New', Courier, monospace;
+}
+
+.cardNumber {
+    font-family: Verdana, 'Times New Roman', Times, serif;
+    position: absolute;
+    font-size: 300px;
+    text-align: center;
+    z-index: 1;
+    margin: -150px 0px 0 50px;
+    color: rgba(250, 199, 90, 0.267);
+}
+
+.descriptionContent {
+    margin: 10px;
+
+    font-size: 16px;
+    font-weight: 200;
+    z-index: 2;
+}
+
+.descriptionContentBold {
+    /* font-weight: bold; */
+    font-weight: 500;
+    margin-bottom: -10px;
+}
+
+.bulletPoints {
+    display: flex;
+    flex-direction: row;
+}
+
+.appImages {
+    width: 150px;
+}
+
+.appCard {
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.descriptionCardContent {
+    width: 35vw;
+}
+
+.appDescription {
+    width: 50vw;
+}
+
+.personaContent {
+    width: 50vw;
+}
+
+.interviewQuestions {
+    margin-left: 30px;
+}
+
+.descriptionGridTitle {
+    margin-bottom: 0px;
+}
+
+.eachInsight {
+    border-right: 1px dashed rgb(194, 194, 194);
+}
+
+.majorInsights {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+.datingUsage {
+    display: flex;
+    flex-direction: row;
+}
+
+.starContainer {
+    /* font-size: 50px; */
+    margin-left: 10px;
+    color: rgb(252, 238, 50);
+}
+
+.grid-box {
+    display: grid;
+    /* grid-gap: 20px; */
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto 10px;
+    /* margin-bottom: 40px; */
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.cell {
+    font-size: 16px;
+    font-weight: 200;
+    padding: 5px;
+}
+
+.gridMargin {
+    margin-left: 0;
+}
+
+.gridBorderLeft {
+    border-left: 1px dashed grey;
+}
+
+.personaImage {
+    width: 300px;
+    margin-right: 20px;
+}
+
+.themeLetterSpacing {
+    letter-spacing: 0px;
+}
+
+.personaSideBySide {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    font-weight: 200;
+    /* padding: 10px; */
+}
+
+.personaSide {
+    margin: 5px;
+}
+
+.textInPersona {
+    color: black;
+}
+
+
+
+.cozyGrid3 {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+}
+
+.twitchGrid23 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.twitchGridV2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.twitchImages {
+    max-width: 400px;
+    padding: 10px;
+}
+
+.twitch1 {
+    max-width: 600px;
+}
+
+.twitchOverlay {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.locationDetail {
+    text-align: center;
+}
+
+.cozyImage {
+    width: 30vw;
+    max-width: 300px;
+    padding: 10px;
+}
+
+.locationDescription {
+    text-align: center;
+}
+
+.locationImage {
+    max-width: 500px;
+    width: 50vw;
+}
+
+.locationLogo {
+    max-width: 40px;
+}
+
+.dpjWebsite {
+    border-radius: 0px;
+}
+
+.dpjPictures2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.dpjLogoImages {
+    max-width: 600px;
+    width: 30vw;
+}
+
+.dpjMainLogo {
+    max-width: 200px;
+}
+
+.dpjPictures {
+    margin: 10px;
+}
+
+
+
+
+.jamGridBox {
+    display: grid;
+    /* grid-gap: 20px; */
+    grid-template-columns: repeat(2, 1fr);
+    /* margin: auto 5px; */
+    /* margin-bottom: 40px; */
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.jamCell {
+    font-size: 16px;
+    font-weight: 200;
+    padding: 20px;
+}
+
+.jamImage {
+    max-width: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+    .uxAppContainerRow {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .uxAppCardButtonImage {
+        max-width: 80vw;
+    }
+
 }

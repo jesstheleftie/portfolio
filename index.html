@@ -6,16 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Basic HTML Boilerplate</title>
     <!-- Link to External CSS File -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="assets/jessicaLogoSquare.png"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- App -->
     <div id="appContainer" class="appContainer">
+      <div class="myLogo" id="myLogo">
+        <img class="logo" src="assets/jessicaLogo.png" alt="" /> JESSICA T.
+      </div>
       <div id="navBar" class="navBar">
         <div
           id="navButton_home"
           data-targetpageid="homePage"
-          class="navButton"
+          class="eventButton navButton"
           style="margin-left: auto"
         >
           Home
@@ -23,24 +42,28 @@
         <div
           id="navButton_about"
           data-targetpageid="aboutPage"
-          class="navButton"
+          class="eventButton navButton"
         >
           About
         </div>
-        <div id="navButton_work" data-targetpageid="workPage" class="navButton">
+        <div
+          id="navButton_work"
+          data-targetpageid="workPage"
+          class="eventButton navButton"
+        >
           Work
         </div>
         <div
           id="navButton_contact"
           data-targetpageid="contactPage"
-          class="navButton"
+          class="eventButton navButton"
         >
           Contact
         </div>
         <div
           id="navButton_contact"
           data-targetpageid="contactPage"
-          class="navButton"
+          class="eventButton navButton"
         >
           Resume
         </div>
@@ -53,126 +76,139 @@
           <div class="heroContainer">HERO HERE -----></div>
 
           <!-- Blurp -->
-          <div class="sideGutter">
-            <div class="blurpContainer">
-              <div>Jessica Tang</div>
-              <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptates repellendus explicabo obcaecati voluptatibus aperiam
-                ea in temporibus minima vitae, quod veritatis tenetur quaerat,
-                beatae soluta accusantium vel, provident debitis saepe tempora!
-                Magnam, dolorem. Voluptatibus aliquid minima nostrum suscipit
-                repellendus omnis, molestiae iure corrupti! Quasi facilis
-                laudantium tempora, culpa obcaecati exercitationem mollitia?
-                Iusto, labore. Fuga deleniti consectetur harum perspiciatis
-                praesentium molestias autem eum aliquam, nihil hic facilis id
-                culpa excepturi maiores in temporibus minus modi neque assumenda
-                quas quam corrupti nobis! Assumenda, autem. Fuga tenetur eveniet
-                nobis dolor optio facilis quam natus error cumque ex, eaque
-                aliquid soluta vel quis sit repudiandae architecto accusamus
-                delectus explicabo neque nemo ipsum quidem! Ipsa, commodi! Illum
-                quod fugit molestias? Labore, est vero! Eum nisi perspiciatis
-                quibusdam at voluptatem non quam tempora quae dolore? Quam
-                praesentium sit in libero provident, reiciendis doloremque aut
-                rerum ducimus, quia et cum animi enim placeat id explicabo
-                aspernatur. Ab impedit id aspernatur ea eius quibusdam illum,
-                iusto accusantium nemo exercitationem mollitia, sequi nisi
-                ducimus aut consequuntur eos quia, non eveniet sed placeat
-                repellat dicta sapiente quas! Eligendi suscipit et repudiandae
-                sequi! Nisi, temporibus? Similique accusamus, odit earum eius
-                minima, cumque expedita tempore voluptate obcaecati veniam
-                consectetur et qui illum!
-              </div>
-            </div>
-            <!-- Technologies -->
+          <div class="blurpContainer">
+            <div>Jessica Tang</div>
             <div>
-              <div>Technologies</div>
-              <div class="technologyBoxContainer">
-                <div class="technologyBox">
-                  <div class="technologyLogo"></div>
-                  <div class="technologyDescription">Desc</div>
-                </div>
-                <div class="technologyBox">
-                  <div class="technologyLogo"></div>
-                  <div class="technologyDescription">Desc</div>
-                </div>
-                <div class="technologyBox">
-                  <div class="technologyLogo"></div>
-                  <div class="technologyDescription">Desc</div>
-                </div>
-                <div class="technologyBox">
-                  <div class="technologyLogo"></div>
-                  <div class="technologyDescription">Desc</div>
-                </div>
-                <div class="technologyBox">
-                  <div class="technologyLogo"></div>
-                  <div class="technologyDescription">Desc</div>
-                </div>
-                <div class="technologyBox">
-                  <div class="technologyLogo"></div>
-                  <div class="technologyDescription">Desc</div>
-                </div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates repellendus explicabo obcaecati voluptatibus aperiam ea
+              in temporibus minima vitae, quod veritatis tenetur quaerat, beatae
+              soluta accusantium vel, provident debitis saepe tempora! Magnam,
+              dolorem. Voluptatibus aliquid minima nostrum suscipit repellendus
+              omnis, molestiae iure corrupti! Quasi facilis laudantium tempora,
+              culpa obcaecati exercitationem mollitia? Iusto, labore. Fuga
+              deleniti consectetur harum perspiciatis praesentium molestias
+              autem eum aliquam, nihil hic facilis id culpa excepturi maiores in
+              temporibus minus modi neque assumenda quas quam corrupti nobis!
+              Assumenda, autem. Fuga tenetur eveniet nobis dolor optio facilis
+              quam natus error cumque ex, eaque aliquid soluta vel quis sit
+              repudiandae architecto accusamus delectus explicabo neque nemo
+              ipsum quidem! Ipsa, commodi! Illum quod fugit molestias? Labore,
+              est vero! Eum nisi perspiciatis quibusdam at voluptatem non quam
+              tempora quae dolore? Quam praesentium sit in libero provident,
+              reiciendis doloremque aut rerum ducimus, quia et cum animi enim
+              placeat id explicabo aspernatur. Ab impedit id aspernatur ea eius
+              quibusdam illum, iusto accusantium nemo exercitationem mollitia,
+              sequi nisi ducimus aut consequuntur eos quia, non eveniet sed
+              placeat repellat dicta sapiente quas! Eligendi suscipit et
+              repudiandae sequi! Nisi, temporibus? Similique accusamus, odit
+              earum eius minima, cumque expedita tempore voluptate obcaecati
+              veniam consectetur et qui illum!
+            </div>
+          </div>
+          <!-- Technologies -->
+          <div>
+            <div>Technologies</div>
+            <div class="technologyBoxContainer">
+              <div class="technologyBox">
+                <div class="technologyLogo"></div>
+                <div class="technologyDescription">Desc</div>
+              </div>
+              <div class="technologyBox">
+                <div class="technologyLogo"></div>
+                <div class="technologyDescription">Desc</div>
+              </div>
+              <div class="technologyBox">
+                <div class="technologyLogo"></div>
+                <div class="technologyDescription">Desc</div>
+              </div>
+              <div class="technologyBox">
+                <div class="technologyLogo"></div>
+                <div class="technologyDescription">Desc</div>
+              </div>
+              <div class="technologyBox">
+                <div class="technologyLogo"></div>
+                <div class="technologyDescription">Desc</div>
+              </div>
+              <div class="technologyBox">
+                <div class="technologyLogo"></div>
+                <div class="technologyDescription">Desc</div>
               </div>
             </div>
-            <!-- Web Dev Project Section -->
-            <div class="webDevSection">
-              <div>Web Development</div>
-              <!-- Webdev1 -->
-              <div class="webDevProjectContainer">
-                <div class="webDevProjectDescriptionContainer">
-                  <div>Title</div>
-                  <div>
-                    <div>Project Name</div>
-                    <div>Project Description</div>
-                  </div>
-                  <div>Technology</div>
-                  <div>Launch Github</div>
+          </div>
+          <!-- Web Dev Project Section -->
+          <div class="webDevSection">
+            <div>Web Development</div>
+            <!-- Webdev1 -->
+            <div class="webDevProjectContainer">
+              <div class="webDevProjectDescriptionContainer">
+                <div>Title</div>
+                <div>
+                  <div>Project Name</div>
+                  <div>Project Description</div>
                 </div>
-                <div class="webDevProjectImage">Image</div>
+                <div>Technology</div>
+                <div>Launch Github</div>
               </div>
-              <div class="webDevProjectContainer flexRev">
-                <div class="webDevProjectDescriptionContainer">
-                  <div>Title</div>
-                  <div>
-                    <div>Project Name</div>
-                    <div>Project Description</div>
-                  </div>
-                  <div>Technology</div>
-                  <div>Launch Github</div>
-                </div>
-                <div class="webDevProjectImage">Image</div>
-              </div>
+              <div class="webDevProjectImage">Image</div>
             </div>
-            <!-- UX Project Section -->
-            <div>
-              <div>User Experience/Interface (UX/UI)</div>
+            <div class="webDevProjectContainer flexRev">
+              <div class="webDevProjectDescriptionContainer">
+                <div>Title</div>
+                <div>
+                  <div>Project Name</div>
+                  <div>Project Description</div>
+                </div>
+                <div>Technology</div>
+                <div>Launch Github</div>
+              </div>
+              <div class="webDevProjectImage">Image</div>
+            </div>
+          </div>
+          <!-- UX Project Section -->
+          <div>
+            <div>User Experience/Interface (UX/UI)</div>
+            <div class="uxAppContainerRow">
               <div
                 id="navButton_uxPage1"
                 data-targetpageid="uxPage1"
-                class="navButton"
+                class="eventButton uxAppCardButton"
               >
-                UX Project 1
+                <img
+                  class="uxAppCardButtonImage"
+                  src="assets/dinnr/dinnrAppCard.png"
+                />
               </div>
               <div
                 id="navButton_uxPage2"
                 data-targetpageid="uxPage2"
-                class="navButton"
+                class="eventButton uxAppCardButton"
               >
-                UX Project 2
+                <img
+                  class="uxAppCardButtonImage"
+                  src="assets/budding/buddingAppCard.png"
+                />
               </div>
+            </div>
+            <div class="uxAppContainerRow">
               <div
                 id="navButton_uxPage3"
                 data-targetpageid="uxPage3"
-                class="navButton"
+                class="eventButton uxAppCardButton"
               >
-                UX Project 3
+                <img
+                  class="uxAppCardButtonImage"
+                  src="assets/graphic/graphicAppCard.png"
+                />
               </div>
               <div
                 id="navButton_uxPage4"
                 data-targetpageid="uxPage4"
-                class="navButton"
+                class="eventButton uxAppCardButton"
               >
-                UX Project 4
+                <img
+                  class="uxAppCardButtonImage"
+                  src="assets/fun/funAppCard.png"
+                />
               </div>
             </div>
           </div>
@@ -182,69 +218,1624 @@
         <div id="uxPagesContainer">
           <div id="uxPageBackButton" class="uxPageBackButton">Back</div>
           <div id="uxPage1" class="navPage uxPage uxPage1">
-            UX Project Page 1
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
+            <div class="projectContainer" id="project1">
+              <div class="projectMotto">
+                <span class="mottoTitle">DINNR</span>
+                <span class="mottoContent">FIND DATES, NOT JUST MATCHES</span>
+              </div>
+              <br />
+              <img
+                class="projectImageDetail"
+                src="assets/dinnr/dinnrAppCard.png"
+                alt="Project 1 Screen"
+              />
+
+              <!-- my role -->
+              <div class="myRole">
+                <div class="eachRole">
+                  <div class="descriptionTitle">MY ROLE</div>
+                  <div class="descriptionContent">
+                    <!-- bullet -->
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>
+                        UX Designer in collaboration with Amy Zhou and Karman Li
+                      </div>
+                    </div>
+                    <!-- bullet end -->
+                  </div>
+                </div>
+                <div class="eachRole">
+                  <div class="descriptionTitle">TIMELINE</div>
+                  <div class="descriptionContent">
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>May - July 2021 (12 weeks)</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <br />
+              <div class="descriptionTitle">PROBLEM</div>
+              <div class="descriptionContent descriptionContentBold">
+                Dating app users are frustrated from dead end conversations that
+                don’t lead to in-person dates. 
+              </div>
+              <div class="descriptionContent">
+                Growing up in the digital age, dating apps are very common yet
+                there’s still stigma around the dangers of meeting online people
+                in real life. Many users find that conversations lead nowhere
+                when a physical date isn’t initiated. 
+              </div>
+              <br />
+              <hr />
+              <br />
+
+              <div class="descriptionTitle">THE SOLUTION</div>
+              <div class="descriptionContent descriptionContentBold">
+                Incorporate restaurant booking and dinner date invitation into
+                the app as a core task.
+              </div>
+
+              <br />
+              <!-- description card 1 -->
+              <div class="descriptionCard">
+                <div class="descriptionCardContent">
+                  <div class="cardNumber">1</div>
+                  <div class="descriptionContent descriptionContentBold">
+                    Invite and Schedule Dinner Dates
+                  </div>
+                  <div class="descriptionContent">
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>
+                        Increases your change of meeting your matches
+                        face-to-face
+                      </div>
+                    </div>
+
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>
+                        Provide less friction to initiate dinner date when on
+                        the same platform
+                      </div>
+                    </div>
+
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>Connect through interest in food</div>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  class="projectImage"
+                  src="assets/dinnr/dinnr3.png"
+                  alt="Project 1 Screen"
+                />
+              </div>
+              <!-- description card 2 -->
+              <div class="descriptionCard">
+                <img class="projectImage" src="assets/dinnr/dinnr5.png" />
+                <div class="descriptionCardContent">
+                  <div class="cardNumber">2</div>
+                  <div class="descriptionContent descriptionContentBold">
+                    Creating Trust on the Platform
+                  </div>
+                  <div class="descriptionContent">
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>More extensive profile creation process</div>
+                    </div>
+
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>ID verification when onboarding platform</div>
+                    </div>
+
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>Mutual friend list</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- description card 3 -->
+              <div class="descriptionCard">
+                <div class="descriptionCardContent">
+                  <div class="cardNumber">3</div>
+                  <div class="descriptionContent descriptionContentBold">
+                    Partnership with Restaurants
+                  </div>
+                  <div class="descriptionContent">
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>Simplify booking process</div>
+                    </div>
+
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>Track, manage and reminders for dates</div>
+                    </div>
+
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>
+                        Incentivize dinner dates with deals from paid restaurant
+                        partners
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  class="projectImage"
+                  src="assets/dinnr/dinnr4.png"
+                  alt="Project 1 Screen"
+                />
+              </div>
+
+              <br />
+              <hr />
+              <br />
+              <div class="descriptionTitle">COMPETITIVE ANALYSIS</div>
+              <div class="descriptionContent descriptionContentBold">
+                The competition has no incentive for in real life meet up
+              </div>
+              <div class="descriptionContent">
+                During the research phase of this project, I conducted a
+                competitor analysis of other websites/apps that have similar
+                interfaces to DINNR. I analyzed the 4 most populat dating apps.
+                I found that none of these apps included meeting up as a core
+                task. This then became my opportunity for the solution.
+              </div>
+
+              <!-- app1 -->
+              <div class="descriptionCard appCard">
+                <img class="appImages" src="assets/appLogo/hinge.png" />
+                <div class="appDescription">
+                  <div class="descriptionTitle">HINGE</div>
+                  <div class="descriptionContent">
+                    Hinge is a social discovery app, connecting users with
+                    friends of friends from Facebook. It's a dating app with a
+                    purposefully limited pool of potential matches for each
+                    user. Your potential matches will know someone that you are
+                    friends with on Facebook. Hinge is targeting people looking
+                    for a serious relationship.
+                  </div>
+                </div>
+              </div>
+
+              <!-- app2 -->
+              <div class="descriptionCard appCard">
+                <img class="appImages" src="assets/appLogo/tinder.png" />
+                <div class="appDescription">
+                  <div class="descriptionTitle">TINDER</div>
+                  <div class="descriptionContent">
+                    Tinder is an online dating and networking app. Users can
+                    like or dislike profiles by simply swiping left or right.
+                    Profiles include a short bio, interests and a few photos.
+                    Users can only start connecting if both users match. Tinder
+                    has a looser filter system and is targeting people looking
+                    to explore and connect.
+                  </div>
+                </div>
+              </div>
+
+              <!-- app3 -->
+              <div class="descriptionCard appCard">
+                <img class="appImages" src="assets/appLogo/okc.png" />
+                <div class="appDescription">
+                  <div class="descriptionTitle">OKCUPID</div>
+                  <div class="descriptionContent">
+                    OKCupid generates matches by applying data generated by
+                    users' activities. When answering questions users choose
+                    their answers, the answer they would accept from a partner
+                    and level of importance of that question. OKCupid then uses
+                    an algorithm to calculate and present potential matches.
+                  </div>
+                </div>
+              </div>
+
+              <!-- app4 -->
+              <div class="descriptionCard appCard">
+                <img class="appImages" src="assets/appLogo/match.png" />
+                <div class="appDescription">
+                  <div class="descriptionTitle">MATCH.COM</div>
+                  <div class="descriptionContent">
+                    Match.com is a dating website where users create a profile
+                    and start connecting with others. The profiles are more
+                    extensive compared to other dating apps so its great for
+                    screening before committing to conversations. The targeting
+                    audience for Match.com is more mature and looking for
+                    serious relationships.
+                  </div>
+                </div>
+              </div>
+
+              <br />
+              <hr />
+              <br />
+              <div class="descriptionTitle interviewSection">
+                USER INTERVIEWS
+              </div>
+
+              <div class="descriptionContent descriptionContentBold">
+                My interviewees all agree that in person meeting is a critical
+                step before a successful relationship is formed
+              </div>
+              <div class="descriptionContent">
+                Although I saw from my research that in real life meet ups is
+                very important and a crucial step before relationships are
+                formed, I've conducted interviews with 20 users between the ages
+                of 20-35. I've asked them questions below to find trends on why
+                they prefer to meet someone in real life.
+              </div>
+
+              <div class="descriptionContent descriptionContentBold">
+                Interview Questions
+              </div>
+              <div class="descriptionContent interviewQuestions">
+                1. How many people do you end up meeting after matching on
+                previous dating apps?<br />
+                2. Out of the people that you meet up with, how many do you
+                continue to keep in contact?<br />
+                3. What are you motives for joining a dating app?<br />
+                4. Which dating app do you use the most?<br />
+                5. Have you met up with anyone through a dating app?<br />
+                6. What would make you feel more comfortable to meet up?<br />
+                7. What would you change about the current dating app you
+                use?<br />
+                8. What makes you stop using the dating app?<br />
+              </div>
+
+              <div class="descriptionContent descriptionContentBold">
+                The Main Insight:
+              </div>
+
+              <div class="descriptionContent descriptionContentBold">
+                My interviewees did not find success in previous dating apps
+                because the core task of the app was to match you with
+                compatible people but there were no initiatives for in real life
+                meet ups.
+              </div>
+              <div class="descriptionContent">
+                Based on the trends that I found after the interview and
+                surveys, I found that the majority of successful relationships
+                must have an in real life component. All of the interviewers
+                said that even when conversations are going well, not all
+                matches will initiate a meeting in real life. Most felt
+                overwhelmed by the amount of matches and conversations made.
+              </div>
+              <br />
+              <div
+                class="descriptionContent descriptionContentBold descriptionGridTitle"
+              >
+                Major Insights:
+              </div>
+
+              <div class="grid-box">
+                <div class="cell">
+                  <div class="descriptionTitle gridMargin themeLetterSpacing">
+                    Theme 1: Initiative
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="descriptionTitle gridMargin themeLetterSpacing">
+                    Theme 2: Profile Honesty
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="descriptionTitle gridMargin themeLetterSpacing">
+                    Theme 3: Intension
+                  </div>
+                </div>
+                <div class="cell">
+                  Taking initiative from both parties is difficult when
+                  transitioning from online to IRL meet up.
+                </div>
+                <div class="cell gridBorderLeft">
+                  User are often disappointed after meeting up as profile was
+                  set up with too high expectations
+                </div>
+                <div class="cell gridBorderLeft">
+                  My interviewees noticed the user base depends on the tone set
+                  for the app. Eg. Casual dating or serious relationship
+                </div>
+                <div class="cell">
+                  Users are afraid of rejection. Time and money is invested from
+                  both parties. Also afraid of safety issues.
+                </div>
+                <div class="cell gridBorderLeft">
+                  Profiles can be deceptive if outdated/edited photos are used
+                </div>
+                <div class="cell gridBorderLeft">
+                  My interviewees are more willing to meet up and invest time if
+                  other matches have similar intentions
+                </div>
+                <div class="cell">
+                  When oposite party initiates to meet up interviewees responded
+                  that they will likely accept the invitiation.
+                </div>
+                <div class="cell gridBorderLeft">
+                  Interviewees said they lose hope with dating apps when they
+                  constantly get disappointed when finally meeting up with
+                  matches
+                </div>
+                <div class="cell gridBorderLeft">
+                  When opposite party initiates a dinner date, it shows some
+                  sort of commitment and intension to get to know each other
+                  more.
+                </div>
+              </div>
+              <br />
+              <hr />
+              <br />
+              <!-- persona -->
+              <div class="descriptionTitle">PRIMARY PERSONA</div>
+              <div class="descriptionCard">
+                <img
+                  class="projectImage personaImage"
+                  src="assets/dinnr/dinnrPersona.jpg"
+                />
+                <div class="personaContent">
+                  <div class="descriptionTitle">
+                    Kimberly Woods | 25 years old | Auditor at Deloitte
+                  </div>
+                  <div class="descriptionContent">
+                    Kimberly is a 25 year old auditor working at Deloitte
+                    accounting firm in San Francisco. She spends most of her
+                    days at work and overtime is not out of the ordinary,
+                    therefore meeting partners through a dating app works best
+                    for her. Kimberly loves going to local restaurants and
+                    trying out new food around her office in downtown San
+                    Francisco. She loves meeting new people and engaging in
+                    genuine conversation. She is happy with her career
+                    trajectory and just purchased a condo. She is not looking
+                    for a serious relationship to share her life with.
+                  </div>
+                  <br />
+                  <div class="descriptionTitle">Online Dating Usage</div>
+                  <div class="descriptionContent datingUsage">
+                    <div>
+                      Curiosity 3/5
+                      <br />
+                      Serious Dating 5/5
+                      <br />
+                      Casual Dating 2/5
+                    </div>
+                    <div class="starContainer">
+                      ⬤ ⬤ ⬤
+                      <br />
+                      ⬤ ⬤ ⬤ ⬤ ⬤
+                      <br />
+                      ⬤ ⬤
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="personaSideBySide">
+                <div class="personaSide">
+                  <div class="descriptionTitle">Goals</div>
+                  <div class="bulletPoints">
+                    <div>•&nbsp;&nbsp;</div>
+                    <div>
+                      Find a long term relationship to settle down with. 
+                    </div>
+                  </div>
+                  <div class="bulletPoints">
+                    <div>•&nbsp;&nbsp;</div>
+                    <div>
+                      Put herself out there to go on more dates and meet more
+                      people. 
+                    </div>
+                  </div>
+                  <div class="bulletPoints">
+                    <div>•&nbsp;&nbsp;</div>
+                    <div>
+                      Engage in conversation and explore new restaurants around
+                      her neighborhood. 
+                    </div>
+                  </div>
+                </div>
+                <div class="personaSide">
+                  <div class="descriptionTitle">Motivations</div>
+
+                  <div class="bulletPoints">
+                    <div>•&nbsp;&nbsp;</div>
+                    <div>
+                      Stable career, stable finance, feeling lonely and need
+                      company to share her success with.
+                    </div>
+                  </div>
+                  <div class="bulletPoints">
+                    <div>•&nbsp;&nbsp;</div>
+                    <div>
+                      Hates to waste time, like to do things efficiently. 
+                    </div>
+                  </div>
+                  <div class="bulletPoints">
+                    <div>•&nbsp;&nbsp;</div>
+                    <div>Wants to relax and meet people outside of work. </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="personaSideBySide">
+                <div class="personaSide">
+                  <div class="descriptionTitle">Pain Points</div>
+                  <div class="bulletPoints">
+                    <div>•&nbsp;&nbsp;</div>
+                    <div>
+                      Many people on dating apps just want validation and are
+                      there out of curiosity therefore never initiating a
+                      meetup, a waste of time in her eyes 
+                    </div>
+                  </div>
+                  <div class="bulletPoints">
+                    <div>•&nbsp;&nbsp;</div>
+                    <div>
+                      Dishonest profile with old photos and exaggerated bios,
+                      disappointed when meeting up, discourages people to
+                      initiate meet up 
+                    </div>
+                  </div>
+                  <div class="bulletPoints">
+                    <div>•&nbsp;&nbsp;</div>
+                    <div>
+                      Feel cautious when meeting people, some dating apps don’t
+                      have ID verification  
+                    </div>
+                  </div>
+                  <div class="bulletPoints">
+                    <div>•&nbsp;&nbsp;</div>
+                    <div>
+                      Some dating apps give you too many matches and it is
+                      overwhelming to deal with so many conversations. You lose
+                      track of who you were talking to and who you made a date
+                      with  
+                    </div>
+                  </div>
+                  <div class="bulletPoints">
+                    <div>•&nbsp;&nbsp;</div>
+                    <div>Lack of personal engagement </div>
+                  </div>
+                  <div class="bulletPoints">
+                    <div>•&nbsp;&nbsp;</div>
+                    <div>Minimal amount of information about people</div>
+                  </div>
+                  <div class="bulletPoints">
+                    <div>•&nbsp;&nbsp;</div>
+                    <div>Filtering and blocking out inappropriate messages</div>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+              <br />
+              <!-- Design -->
+              <div class="descriptionTitle">DESIGN</div>
+              <div class="descriptionContent descriptionContentBold">
+                Setbacks + A New Direction
+              </div>
+              <div class="descriptionContent">
+                <div class="bulletPoints">
+                  <div>•&nbsp;&nbsp;</div>
+                  <div>
+                    While designing the app with a focus to reduce friction
+                    between online and in real life transition for matches to
+                    meet up, there were other aspects such as matchmaking
+                    algorithms, safety features and app tone of voice that needs
+                    to be aligned with user needs for the app to be successful. 
+                  </div>
+                </div>
+
+                <div class="bulletPoints">
+                  <div>•&nbsp;&nbsp;</div>
+                  <div>
+                    When designing the app I put focus on creating a simple and
+                    less friction onboarding process while trading off security
+                    and trust for users. After analyzing the research and user
+                    interviews/survey I found that people put trust and honesty
+                    as a high priority when it comes to dating apps. 
+                  </div>
+                </div>
+              </div>
+              <br />
+              <hr />
+              <br />
+              <!-- Testing and improvements -->
+              <div class="descriptionTitle">TESTING + IMPROVEMENTS</div>
+              <div class="descriptionContent descriptionContentBold">
+                3 Major Improvements In My Design 
+              </div>
+              <div class="descriptionContent">
+                Based on various feedback from usability testing and mentor
+                feedback, I continually iterated my design with 3 major
+                improvements
+              </div>
+
+              <!-- description card 1 -->
+              <div class="descriptionCard">
+                <div class="descriptionCardContent">
+                  <div class="cardNumber">1</div>
+                  <div class="descriptionTitle">Onboarding ID Verification</div>
+                  <div class="descriptionContent">
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>
+                        Security Addition with ID Verification to create a sense
+                        of trust for users. Since the app encourages people to
+                        meet face to face, safety is a top priority
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  class="projectImage"
+                  src="assets/dinnr/dinnr5.png"
+                  alt="Project 1 Screen"
+                />
+              </div>
+              <!-- description card 2 -->
+              <div class="descriptionCard">
+                <img class="projectImage" src="assets/dinnr/dinnr2.png" />
+                <div class="descriptionCardContent">
+                  <div class="cardNumber">2</div>
+                  <div class="descriptionTitle">
+                    Mutual Friends and Verified Icon
+                  </div>
+                  <div class="descriptionContent">
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>
+                        A verification badge that indicates if a user has
+                        verified their ID. That way users are aware who has gone
+                        through the security check.
+                      </div>
+                    </div>
+
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>
+                        After connecting your Facebook account, you can see your
+                        mutual friends with your matches
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- description card 3 -->
+              <div class="descriptionCard">
+                <div class="descriptionCardContent">
+                  <div class="cardNumber">3</div>
+                  <div class="descriptionTitle">Date Management - Calendar</div>
+                  <div class="descriptionContent">
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>
+                        Calendar view of upcoming dates & google calendar sync
+                      </div>
+                    </div>
+
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>
+                        Follow up notification for how the date went and a
+                        reminder to keep in contact if the date went well
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <img
+                  class="projectImage"
+                  src="assets/dinnr/dinnr6.png"
+                  alt="Project 1 Screen"
+                />
+              </div>
+              <br />
+              <hr />
+              <br />
+              <div class="descriptionTitle">REFLECTION</div>
+              <div class="descriptionContent">
+                <div class="bulletPoints">
+                  <div>1.&nbsp;&nbsp;&nbsp;</div>
+                  <div>
+                    Iterate as much as you can: After running the tasks in my
+                    head, I noticed missing points and I had to restructure the
+                    application a few times 
+                  </div>
+                </div>
+                <div class="bulletPoints">
+                  <div>2.&nbsp;&nbsp;</div>
+                  <div>
+                    Try using competitor products to understand user and have
+                    empathy for user pain points 
+                  </div>
+                </div>
+                <br />
+                <hr />
+                <br />
+                <br />
+              </div>
+
+              <!-- end of within container -->
+            </div>
           </div>
           <div id="uxPage2" class="navPage uxPage uxPage2">
-            UX Project Page 2
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
-            <div>BLAH</div>
+            <div class="projectContainer" id="project2">
+              <div class="projectMotto">
+                <span class="mottoTitle">BUDDING WRITERS</span>
+                <span class="mottoContent"
+                  >E-Commerce website for secondhand bookstore</span
+                >
+              </div>
+              <br />
+              <img
+                class="projectImageDetail"
+                src="assets/budding/buddingAppCard.png"
+                alt="Project 2 Screen"
+              />
+
+              <!-- my role -->
+              <div class="myRole">
+                <div class="eachRole">
+                  <div class="descriptionTitle">MY ROLE</div>
+                  <div class="descriptionContent">
+                    <!-- bullet -->
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>UX Designer</div>
+                    </div>
+                    <!-- bullet end -->
+                  </div>
+                </div>
+                <div class="eachRole">
+                  <div class="descriptionTitle">TIMELINE</div>
+                  <div class="descriptionContent">
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>March - May (8 Weeks)</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <br />
+              <div class="descriptionTitle">PROBLEM</div>
+              <div class="descriptionContent descriptionContentBold">
+                Budding Writer Cafe and Bookstore notice declining sales and
+                receiving frustrated customer complaints about outdated book
+                availability and inconvenient purchase procedure.
+              </div>
+              <div class="descriptionContent">
+                Budding Writers is a book store that sells brand new and second
+                hand books that would like to move their checkout to online.
+                Currently their website shows the available books for purchase
+                and requires the customer to call in or walk in to make the
+                purchase.
+              </div>
+              <br />
+              <hr />
+              <br />
+
+              <div class="descriptionTitle">THE SOLUTION</div>
+              <div class="descriptionContent descriptionContentBold">
+                Create a customizable search library and seamless online check
+                out procedure.
+              </div>
+
+              <br />
+              <!-- description card 1 -->
+              <div class="descriptionCard">
+                <div class="descriptionCardContent">
+                  <div class="cardNumber">1</div>
+                  <div class="descriptionContent descriptionContentBold">
+                    Product Screen with a Search Bar and Featured Books
+                  </div>
+                  <div class="descriptionContent">
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>
+                        Search button on the navigation bar for easy access
+                      </div>
+                    </div>
+
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>
+                        Smart search function when customer types the drop down
+                        will suggest similar titles
+                      </div>
+                    </div>
+
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>
+                        Popular books featured on product page for quick find
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  class="projectImage"
+                  src="assets/budding/budding2.png"
+                  alt="Project 1 Screen"
+                />
+              </div>
+              <!-- description card 2 -->
+              <div class="descriptionCard">
+                <img class="projectImage" src="assets/budding/budding3.png" />
+                <div class="descriptionCardContent">
+                  <div class="cardNumber">2</div>
+                  <div class="descriptionContent descriptionContentBold">
+                    Featured and Recently Searched carousel
+                  </div>
+                  <div class="descriptionContent">
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>
+                        Help users save time if they want to review a searched
+                        book
+                      </div>
+                    </div>
+
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>
+                        Featured books can help bookstore move inventory
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- description card 3 -->
+              <div class="descriptionCard">
+                <div class="descriptionCardContent">
+                  <div class="cardNumber">3</div>
+                  <div class="descriptionContent descriptionContentBold">
+                    Provided detailed product attributes
+                  </div>
+                  <div class="descriptionContent">
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>Help users feel confident in their purchases</div>
+                    </div>
+
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>Less returns for wrong purchases</div>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  class="projectImage"
+                  src="assets/budding/budding4.png"
+                  alt="Project 1 Screen"
+                />
+              </div>
+              <!-- description card 4 -->
+              <div class="descriptionCard">
+                <img
+                  class="projectImage"
+                  src="assets/budding/budding5.png"
+                  alt="Project 1 Screen"
+                />
+                <div class="descriptionCardContent">
+                  <div class="cardNumber">4</div>
+                  <div class="descriptionContent descriptionContentBold">
+                    Simple check out process with progress bar
+                  </div>
+                  <div class="descriptionContent">
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>Less abandoned cart when users see the progress</div>
+                    </div>
+
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>
+                        Simplify the checkout process into smaller chunks, less
+                        intimidating for users
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <br />
+              <hr />
+              <br />
+              <div class="descriptionTitle">COMPETITIVE ANALYSIS</div>
+              <div class="descriptionContent descriptionContentBold">
+                The competition often provided either too little information or
+                overcrowded with information.
+              </div>
+              <div class="descriptionContent">
+                While researching the competitors for this project, I noticed
+                that some websites over simplify their page and focus more on in
+                person shopping while others try to place as much information as
+                possible on one page. This then became my opportunity for the
+                solution.
+              </div>
+
+              <!-- Competitive Sites -->
+
+              <div class="descriptionContent descriptionContentBold">
+                Indigo
+              </div>
+              <div class="descriptionContent">
+                <a href="https://www.chapters.indigo.ca/en-ca/"
+                  >https://www.chapters.indigo.ca/en-ca/</a
+                >
+              </div>
+
+              <div class="descriptionContent descriptionContentBold">
+                Wendel’s online book store
+              </div>
+              <div class="descriptionContent">
+                <a
+                  href=" https://www.bookmanager.com/1190113/?q=h.tviewer&using_sb=status"
+                >
+                  https://www.bookmanager.com/1190113/?q=h.tviewer&using_sb=status</a
+                >
+              </div>
+
+              <br />
+
+              <hr />
+              <br />
+              <div class="descriptionTitle interviewSection">
+                USER INTERVIEWS
+              </div>
+
+              <div class="descriptionContent">
+                After conducting asking these interviews with 15 users between
+                the ages of 25-45 I realized that My interviewees all agree that
+                viewing book availability online was the most important feature
+                of a bookstore webpage. Good search function and filtering is a
+                plus and easy check out is critical.
+              </div>
+
+              <div class="descriptionContent descriptionContentBold">
+                Interview Questions
+              </div>
+              <div class="descriptionContent interviewQuestions">
+                1. Do you prefer in person shopping or online when looking for a
+                book?<br />
+                2. How often do you purchase books online?<br />
+                3. Are you looking for something specific when browsing an
+                online bookstore?<br />
+                4. What are your motives when browsing an online bookstore?
+                <br />
+                5. Which online book store is your go to?<br />
+                6. What makes you click out of an online bookstore?<br />
+                7. What do you look for when purchasing a book?<br />
+              </div>
+
+              <div class="descriptionContent descriptionContentBold">
+                The Main Insight:
+              </div>
+
+              <div class="descriptionContent descriptionContentBold">
+                My interviewees found websites that have an extensive search
+                function with filters to be the most useful when looking for
+                books. More than half of my interviewees prefer to purchase
+                online compared to in person shopping.
+              </div>
+              <div class="descriptionContent">
+                Based on the trends that I found after the interview and
+                surveys, it was evident that users are looking for something
+                specific and they would like to find it easily.
+              </div>
+              <br />
+              <div
+                class="descriptionContent descriptionContentBold descriptionGridTitle"
+              >
+                Major Insights:
+              </div>
+
+              <div class="grid-box">
+                <div class="cell">
+                  <div class="descriptionTitle gridMargin themeLetterSpacing">
+                    Theme 1: Specific Search
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="descriptionTitle gridMargin themeLetterSpacing">
+                    Theme 2: Accurate Inventory
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="descriptionTitle gridMargin themeLetterSpacing">
+                    Theme 3: Simplicity of purchase
+                  </div>
+                </div>
+                <div class="cell">
+                  Most people browse an online bookstore with a title or type of
+                  book in mind, it is important for the user to find what they
+                  are looking for easily.
+                </div>
+                <div class="cell gridBorderLeft">
+                  Users are frustrated when they head to the physical bookstore
+                  and the book that they saw available is sold out. Many
+                  interviewees said that this gave the bookstore a very bad
+                  impression and had wasted a lot of their time.
+                </div>
+                <div class="cell gridBorderLeft">
+                  One of the main reasons my interviewees click out of ecommerce
+                  websites is when the check out process is too extensive or
+                  requires information that they don’t have on hand.
+                </div>
+                <div class="cell">
+                  Having an advanced search function that is more specific is
+                  very important to narrow down the searches for users.
+                </div>
+                <div class="cell gridBorderLeft">
+                  Clear indication of inventory on the product page. Users are
+                  frustrated when they realize the book they clicked into is out
+                  of stock only when they try adding to cart.
+                </div>
+                <div class="cell gridBorderLeft">
+                  Interviewees are more likely to complete a purchase when the
+                  checkout process is short
+                </div>
+                <div class="cell">
+                  Users get overwhelmed when there are too many options.
+                  Breaking down the options to smaller categories can help.
+                </div>
+                <div class="cell gridBorderLeft"></div>
+                <div class="cell gridBorderLeft">
+                  Most interviewees will not attempt to check out again once
+                  they abandon the process, the ones that will say that they
+                  will complete it if the item was saved.
+                </div>
+              </div>
+              <br />
+              <hr />
+              <br />
+              <!-- persona -->
+              <div class="descriptionTitle">PRIMARY PERSONA</div>
+              <div class="descriptionCard">
+                <img
+                  class="projectImage personaImage"
+                  src="assets/budding/budding1.jpg"
+                />
+                <div class="personaContent">
+                  <div class="descriptionTitle">
+                    Robert Mews | 42 years old | Grocery Purchase Manager
+                  </div>
+                  <div class="descriptionContent">
+                    Robert is a 42 year old grocery purchase manager at Save on
+                    Foods in British Columbia. He is married and has two
+                    children ages 8 and 10. In his free time he likes to try new
+                    cooking recipes, play board games with his family and go
+                    biking. He prefers shopping and supporting local businesses.
+                    Robert likes to collect cooking books and mostly purchases
+                    his books online.
+                  </div>
+                  <br />
+                  <div class="descriptionTitle">Technology Usage</div>
+                  <div class="descriptionContent datingUsage">
+                    <div>
+                      Mobile 5/5
+                      <br />
+                      Desktop 3/5
+                      <br />
+                      Tablet 0/5
+                    </div>
+                    <div class="starContainer">
+                      ⬤ ⬤ ⬤ ⬤ ⬤
+                      <br />
+                      ⬤ ⬤ ⬤
+                      <br />
+                      ❌
+                      <span class="textInPersona">(Does not own a tablet)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="personaSideBySide">
+                <div class="personaSide">
+                  <div class="descriptionTitle">Goals</div>
+
+                  <div class="bulletPoints">
+                    <div>•&nbsp;&nbsp;</div>
+                    <div>
+                      Put herself out there to go on more dates and meet more
+                      people. 
+                    </div>
+                  </div>
+                  <div class="bulletPoints">
+                    <div>•&nbsp;&nbsp;</div>
+                    <div>Expand cook book collection</div>
+                  </div>
+                </div>
+                <div class="personaSide">
+                  <div class="descriptionTitle">Motivations</div>
+
+                  <div class="bulletPoints">
+                    <div>•&nbsp;&nbsp;</div>
+                    <div>His hobby is to collect cooking books</div>
+                  </div>
+                  <div class="bulletPoints">
+                    <div>•&nbsp;&nbsp;</div>
+                    <div>
+                      He likes to cook for his family and enjoys trying new
+                      cuisines and styles of cooking 
+                    </div>
+                  </div>
+                  <div class="bulletPoints">
+                    <div>•&nbsp;&nbsp;</div>
+                    <div>
+                      He works with groceries and he loves to keep updated with
+                      trends in the industry 
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="personaSideBySide">
+                <div class="personaSide">
+                  <div class="descriptionTitle">Pain Points</div>
+                  <div class="bulletPoints">
+                    <div>•&nbsp;&nbsp;</div>
+                    <div>
+                      Many local bookstores don’t have an option to purchase
+                      online, Robert likes the convenience of browsing and
+                      making an online purchase
+                    </div>
+                  </div>
+                  <div class="bulletPoints">
+                    <div>•&nbsp;&nbsp;</div>
+                    <div>
+                      Disappointed when book was sold out but not indicated
+                      online due to delay in inventory count
+                    </div>
+                  </div>
+                  <div class="bulletPoints">
+                    <div>•&nbsp;&nbsp;</div>
+                    <div>
+                      Overwhelmed by the amount of choices and options for
+                      filters in some websites. If it is difficult to find what
+                      he is looking for he will click out.
+                    </div>
+                  </div>
+                  <div class="bulletPoints">
+                    <div>•&nbsp;&nbsp;</div>
+                    <div>
+                      Online purchases for books could be difficult because you
+                      can’t skim through the pages, sometimes he would purchase
+                      books and return them if they were not what he was looking
+                      for.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+              <br />
+              <!-- Design -->
+              <div class="descriptionTitle">DESIGN</div>
+              <div class="descriptionContent descriptionContentBold">
+                Setbacks + A New Direction
+              </div>
+              <div class="descriptionContent">
+                <div class="bulletPoints">
+                  <div>•&nbsp;&nbsp;</div>
+                  <div>
+                    While designing the website with a focus on simplifying the
+                    search function and check out, I left out the filtering
+                    feature
+                  </div>
+                </div>
+
+                <div class="bulletPoints">
+                  <div>•&nbsp;&nbsp;</div>
+                  <div>
+                    After usability testing on the low fidelity prototypes, many
+                    users wanted the ability to filter out categories. It was
+                    too overwhelming with the amount of results without this
+                    feature.
+                  </div>
+                </div>
+              </div>
+              <br />
+              <hr />
+              <br />
+              <!-- Testing and improvements -->
+              <div class="descriptionTitle">TESTING + IMPROVEMENTS</div>
+              <div class="descriptionContent descriptionContentBold">
+                3 Major Improvements In My Design 
+              </div>
+              <div class="descriptionContent">
+                Based on various feedback from usability testing and mentor
+                feedback, I continually iterated my design with 3 major
+                improvements
+              </div>
+
+              <!-- description card 1 -->
+              <div class="descriptionCard">
+                <div class="descriptionCardContent">
+                  <div class="cardNumber">1</div>
+                  <div class="descriptionTitle">Advanced Search</div>
+                  <div class="descriptionContent">
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>
+                        Created a drop down advance search to narrow down
+                        results for users that know what they want to find
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  class="projectImage"
+                  src="assets/budding/budding6.png"
+                  alt="Project 1 Screen"
+                />
+              </div>
+              <!-- description card 2 -->
+              <div class="descriptionCard">
+                <img class="projectImage" src="assets/budding/budding7.png" />
+                <div class="descriptionCardContent">
+                  <div class="cardNumber">2</div>
+                  <div class="descriptionTitle">Instore Inventory</div>
+                  <div class="descriptionContent">
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>
+                        Added an inventory count on the product page to let
+                        customers know how many stocks are left. This will
+                        prevent disappointed customers when they pick them up
+                        from the store.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- description card 3 -->
+              <div class="descriptionCard">
+                <div class="descriptionCardContent">
+                  <div class="cardNumber">3</div>
+                  <div class="descriptionTitle">Progress Bar</div>
+                  <div class="descriptionContent">
+                    <div class="bulletPoints">
+                      <div>•&nbsp;&nbsp;</div>
+                      <div>
+                        Check out abandonment can happen for many reasons but if
+                        you let the user know how many more steps are
+                        anticipated, they are more likely to complete the
+                        process
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <img
+                  class="projectImage"
+                  src="assets/budding/budding8.png"
+                  alt="Project 1 Screen"
+                />
+              </div>
+              <br />
+              <hr />
+              <br />
+              <div class="descriptionTitle">REFLECTION</div>
+              <div class="descriptionContent">
+                <div class="bulletPoints">
+                  <div>1.&nbsp;&nbsp;&nbsp;</div>
+                  <div>
+                    Agile UX method where we incorporated user testing
+                    throughout the process to improve the design process. I
+                    iterated my design as much as possible while taking user
+                    input into consideration
+                  </div>
+                </div>
+
+                <div class="bulletPoints">
+                  <div>2.&nbsp;&nbsp;</div>
+                  <div>
+                    Research competitors in similar business size to understand
+                    and have empty for user pain points
+                  </div>
+                </div>
+                <br />
+
+                <hr />
+                <br />
+              </div>
+
+              <!-- end of within container -->
+            </div>
           </div>
           <div id="uxPage3" class="navPage uxPage uxPage3">
-            UX Project Page 3
+            <div class="projectContainer" id="project3">
+              <div class="projectMotto">
+                <span class="mottoTitle">GRAPHICS & BRANDING</span>
+                <span class="mottoContent"
+                  >A Quick Peek at My Branding Designs</span
+                >
+              </div>
+              <br />
+              <img
+                class="projectImageDetail"
+                src="assets/graphic/graphicAppCard.png"
+                alt="Project 2 Screen"
+              />
+
+              <br />
+              <br />
+              <br />
+              <div class="descriptionTitle">COZY COFFEE BRANDING</div>
+              <div class="descriptionContent descriptionContentBold">
+                Project
+              </div>
+              <div class="descriptionContent">
+                Created the logo for the cafe. The logo was used on coffee cups,
+                signage and window decal
+              </div>
+              <div class="descriptionContent descriptionContentBold">Tools</div>
+              <div class="descriptionContent">Adobe Illustrator</div>
+
+              <div class="cozyGrid3">
+                <div>
+                  <img
+                    class="projectImageDetail cozyImage"
+                    src="assets/graphic/cozy1.png"
+                    alt="Project 2 Screen"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="projectImageDetail cozyImage"
+                    src="assets/graphic/logoCozy.png"
+                    alt="Project 2 Screen"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="projectImageDetail cozyImage"
+                    src="assets/graphic/cozy2.png"
+                    alt="Project 2 Screen"
+                  />
+                </div>
+              </div>
+              <br />
+              <hr />
+              <br />
+              <div class="descriptionTitle">Daily Press Juicery Web Design</div>
+              <div class="descriptionContent descriptionContentBold">
+                Project
+              </div>
+              <div class="descriptionContent">
+                Created the user flow of juicery’s e-commerce website. The
+                website allows you to customize your cleanse, choose delivery
+                date, or arrage to pick up in store.
+              </div>
+
+              <div class="descriptionContent descriptionContentBold">Tools</div>
+              <div class="descriptionContent">Shopify, Adobe Illustrator</div>
+              <div class="descriptionContent descriptionContentBold">
+                Take a look here:
+              </div>
+              <div class="descriptionContent">
+                <a href="https://www.dailypressjuicery.ca/ "
+                  >https://www.dailypressjuicery.ca/</a
+                >
+              </div>
+              <br />
+              <img
+                class="projectImageDetail dpjWebsite"
+                src="assets/graphic/dpjWebsite.png"
+                alt="Project 2 Screen"
+              />
+              <br />
+              <hr />
+              <br />
+              <div class="descriptionTitle">
+                Daily Press Juicery Branding & Window Decal
+              </div>
+              <div class="descriptionContent descriptionContentBold">
+                Project
+              </div>
+              <div class="descriptionContent">
+                Created the logo for the juicery. The logo was used on all juice
+                bottles, smoothie cups, signage, website, window decal and
+                merchandise
+              </div>
+
+              <div class="descriptionContent descriptionContentBold">Tools</div>
+              <div class="descriptionContent">Adobe Illustrator</div>
+
+              <div class="dpjPictures2">
+                <div>
+                  <div class="descriptionContent descriptionContentBold">
+                    Brainstorm
+                  </div>
+                  <img
+                    class="projectImageDetail dpjLogoImages"
+                    src="assets/graphic/dpjLogoBrainstorm.png"
+                    alt="Project 2 Screen"
+                  />
+                </div>
+                <div>
+                  <div class="descriptionContent descriptionContentBold">
+                    Final
+                  </div>
+                  <img
+                    class="projectImageDetail dpjLogoImages dpjMainLogo"
+                    src="assets/graphic/dpjLogoFinal.png"
+                    alt="Project 2 Screen"
+                  />
+                </div>
+              </div>
+              <br />
+              <div class="dpjPictures2">
+                <div class="dpjPictures">
+                  <img
+                    class="projectImageDetail"
+                    src="assets/graphic/dpjSmoothie.png"
+                    alt="Project 2 Screen"
+                  />
+                </div>
+                <div class="dpjPictures">
+                  <img
+                    class="projectImageDetail"
+                    src="assets/graphic/dpjFront.png"
+                    alt="Project 2 Screen"
+                  />
+                </div>
+              </div>
+              <br />
+              <hr />
+              <br />
+              <div class="descriptionTitle">
+                Net Zero Co. Electronic Brochure
+              </div>
+              <div class="descriptionContent descriptionContentBold">
+                Project
+              </div>
+              <div class="descriptionContent">
+                Created an online brochure for Net Zero Co. a company that sells
+                sustainable household goods
+              </div>
+              <div class="descriptionContent descriptionContentBold">Tool</div>
+              <div class="descriptionContent">Adobe XD</div>
+              <div class="descriptionContent descriptionContentBold">
+                Take a look here:
+              </div>
+              <div class="descriptionContent">
+                <a
+                  href="https://xd.adobe.com/view/47ef5263-aeab-425a-8f95-cab4f5dbd8f3-12bc/ "
+                  >https://xd.adobe.com/view/47ef5263-aeab-425a-8f95-cab4f5dbd8f3-12bc/</a
+                >
+              </div>
+              <br />
+              <img
+                class="projectImageDetail dpjWebsite"
+                src="assets/graphic/netZero.png"
+                alt="Project 2 Screen"
+              />
+              <br />
+              <br />
+              <hr />
+              <br />
+              <!-- end of within container -->
+            </div>
           </div>
           <div id="uxPage4" class="navPage uxPage uxPage4">
-            UX Project Page 4
+            <div class="projectContainer" id="project4">
+              <div class="projectMotto">
+                <span class="mottoTitle">FUN THINGS I DID</span>
+                <span class="mottoContent"
+                  >Passion Projects I Created During My Free Time</span
+                >
+              </div>
+              <br />
+              <img
+                class="projectImageDetail"
+                src="assets/fun/funAppCard.png"
+                alt="Project 2 Screen"
+              />
+
+              <br />
+              <br />
+              <br />
+              <div class="descriptionTitle">Twitch Study Stream Profile</div>
+              <div class="descriptionContent descriptionContentBold">
+                Project
+              </div>
+              <div class="descriptionContent">
+                When I first moved to Vancouver January of 2021, I was studying
+                UX deisgn at BCIT remotely due to COVID-19 so I spent my free
+                time streaming my study sessions! I illustrated my own offline
+                banner and stream background.
+              </div>
+              <div class="descriptionContent descriptionContentBold">Tools</div>
+              <div class="descriptionContent">Adobe Illustrator</div>
+              <div class="descriptionContent descriptionContentBold">
+                Check out my account here:
+              </div>
+              <div class="descriptionContent">
+                <a href="https://www.twitch.tv/jesstheleftie"
+                  >https://www.twitch.tv/jesstheleftie</a
+                >
+              </div>
+              <div class="twitchGrid23">
+                <div>
+                  <img
+                    class="projectImageDetail twitchImages twitch1"
+                    src="assets/fun/twitchOffline.png"
+                    alt="Project 2 Screen"
+                  />
+                </div>
+
+                <div class="twitchGridV2">
+                  <div>
+                    <img
+                      class="projectImageDetail twitchImages"
+                      src="assets/fun/twitchSocials.png"
+                      alt="Project 2 Screen"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      class="projectImageDetail twitchImages"
+                      src="assets/fun/twitchSchedules.png"
+                      alt="Project 2 Screen"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="twitchOverlay">
+                <img
+                  class="projectImageDetail twitchImages twitch1"
+                  src="assets/fun/twitchOverlay.png"
+                  alt="Project 2 Screen"
+                />
+              </div>
+              <br />
+              <hr />
+              <br />
+
+              <div class="descriptionTitle">
+                Daily Press Juicery Interior Design
+              </div>
+              <div class="descriptionContent descriptionContentBold">
+                Project
+              </div>
+              <div class="descriptionContent">
+                I helped design the interior of 2 juicery locations including
+                flooring, accent walls, fridge wrap, and counter.
+              </div>
+
+              <div class="descriptionCard">
+                <img
+                  class="locationImage"
+                  src="assets/fun/interior1.png"
+                  alt="Project 1 Screen"
+                />
+                <div class="descriptionCardContent locationDetail">
+                  <div class="">
+                    <img
+                      class="locationImage locationLogo"
+                      src="assets/fun/location.png"
+                      alt="Project 1 Screen"
+                    />
+                  </div>
+                  <div class="descriptionContent locationDescription">
+                    Daily Press Juicery
+                    <br />
+                    Queen St West, Toronto Ontario
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="descriptionCard">
+                <img
+                  class="locationImage"
+                  src="assets/fun/interior2.png"
+                  alt="Project 1 Screen"
+                />
+                <div class="descriptionCardContent locationDetail">
+                  <div class="">
+                    <img
+                      class="locationImage locationLogo"
+                      src="assets/fun/idea.png"
+                      alt="Project 1 Screen"
+                    />
+                  </div>
+                  <div class="descriptionContent locationDescription">
+                    Daily Press Juicery
+                    <br />
+
+                    Fridge wrap including lighting, interior mirrors, milk
+                    station, industrial style design.
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="descriptionCard">
+                <img
+                  class="locationImage"
+                  src="assets/fun/interior3.png"
+                  alt="Project 1 Screen"
+                />
+                <div class="descriptionCardContent locationDetail">
+                  <div class="">
+                    <img
+                      class="locationImage locationLogo"
+                      src="assets/fun/location.png"
+                      alt="Project 1 Screen"
+                    />
+                  </div>
+                  <div class="descriptionContent locationDescription">
+                    Daily Press Juicery
+                    <br />
+                    Yonge St, Toronto Ontario
+                  </div>
+                </div>
+              </div>
+
+              <br />
+              <hr />
+              <br />
+
+              <div class="descriptionTitle">Latte Jams</div>
+              <div class="descriptionContent descriptionContentBold">
+                Project
+              </div>
+              <div class="descriptionContent">
+                A micro business I created during COVID19. I made milk based
+                james with creative and nostalgic flavours from my childhood
+                memories. Unfortuantely after moving to Vancouver, I no longer
+                product them. I had fun taking a stab at food photography and
+                advertising on Instagram.
+              </div>
+
+              <!-- Projects -->
+
+              <div class="jamGridBox">
+                <div class="jamCell">
+                  <img
+                    src="assets/fun/jam1.png"
+                    class="jamImage"
+                    alt="Project 1 Screen"
+                  />
+                </div>
+                <div class="jamCell">
+                  <img
+                    src="assets/fun/jam2.png"
+                    class="jamImage"
+                    alt="Project 2 Screen"
+                  />
+                </div>
+                <div class="jamCell">
+                  <img
+                    src="assets/fun/jam3.png"
+                    class="jamImage"
+                    alt="Project 3 Screen"
+                  />
+                </div>
+                <div class="jamCell">
+                  <img
+                    src="assets/fun/jam4.png"
+                    class="jamImage"
+                    alt="Project 4 Screen"
+                  />
+                </div>
+              </div>
+
+              <br />
+              <hr />
+              <br />
+
+              <!-- end of within container -->
+            </div>
           </div>
         </div>
       </div>
