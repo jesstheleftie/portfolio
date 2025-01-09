@@ -114,7 +114,7 @@ const scrollEvent = (elementId, top, target, style = "auto") => {
     else {
       document
         .getElementById(target)
-        .scrollIntoView({ block: "center", behavior: "smooth" });
+        .scrollIntoView({ block: "start", behavior: "smooth" });
     }
   });
 };
@@ -125,3 +125,5 @@ scrollEvent("navButton_uxPage1", 0, null, "smooth");
 scrollEvent("navButton_uxPage2", 0, null, "smooth");
 scrollEvent("navButton_uxPage3", 0, null, "smooth");
 scrollEvent("navButton_uxPage4", 0, null, "smooth");
+scrollEvent("navButton_about", 0, "blurpContainer", "smooth");
+scrollEvent("navButton_work", 0, "webDevSection", "smooth");
