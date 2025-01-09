@@ -102,6 +102,33 @@ body {
     height: calc(var(--navBarHeight) * 1px);
 }
 
+
+.squareButton {
+    width: 50px;
+    font-size: 20px;
+    margin-right: 5px;
+    padding: 2px 8px;
+    text-decoration: none;
+    color: var(--blackText);
+    background-color: #fdda24;
+    border-radius: 5px;
+    /* border: 1px solid var(--lightGrey); */
+    cursor: pointer;
+    box-shadow: 5px 5px #888888;
+    margin-top: 10px;
+}
+
+.squareButton:hover {
+    text-decoration: none;
+    color: var(--blackText);
+    background-color: pink;
+    /* animation: buttonHover 0.1s forwards; */
+    padding-top: 2px;
+    padding-left: 6px;
+    box-shadow: 2px 2px #b3b3b3;
+}
+
+
 .uxPagesContainer {
     display: none;
 }
@@ -113,7 +140,6 @@ body {
 
 .uxPageBackButton:hover {
     cursor: pointer;
-    background: red
 }
 
 .pageContainer {
