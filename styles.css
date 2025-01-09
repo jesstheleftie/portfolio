@@ -84,12 +84,6 @@ body {
 }
 
 
-
-/* .navButton {
-    cursor: pointer;
-} */
-
-
 .navButton {
     padding: 0px 20px;
     /* margin: 0px 5px; */
@@ -165,7 +159,6 @@ body {
 .technologyLogo {
     width: 80px;
     height: 80px;
-    border: 1px solid red
 }
 
 .webDevSection {
@@ -261,7 +254,7 @@ body {
 }
 
 .descriptionTitle {
-    margin: 0 10px;
+    margin: 10px 10px 0 10px;
     font-weight: bold;
     font-size: 16px;
     z-index: 2;
@@ -291,7 +284,7 @@ body {
 .descriptionContentBold {
     /* font-weight: bold; */
     font-weight: 500;
-    margin-bottom: -10px;
+    /* margin-bottom: -10px; */
 }
 
 .bulletPoints {
@@ -486,9 +479,6 @@ body {
     margin: 10px;
 }
 
-
-
-
 .jamGridBox {
     display: grid;
     /* grid-gap: 20px; */
@@ -497,6 +487,7 @@ body {
     /* margin-bottom: 40px; */
     font-weight: 300;
     font-size: 16px;
+    text-align: center;
 }
 
 .jamCell {
@@ -510,17 +501,7 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 
     .uxAppContainerRow {
         flex-direction: column;
