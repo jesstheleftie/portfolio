@@ -21,6 +21,10 @@ body {
     overflow: auto;
 }
 
+.gutterContainer {
+    padding: 0 7vw;
+}
+
 .myLogo {
     position: fixed;
     top: 0;
@@ -120,7 +124,7 @@ body {
 
 .pageContainer {
     min-height: calc(100% - var(--footerHeight)*1px - var(--navBarHeight)*1px);
-    padding: 0 7vw;
+
 }
 
 .uxPage {
@@ -169,10 +173,6 @@ body {
     border: 1px solid red;
 }
 
-.webDevProjectContainer {
-    display: flex;
-
-}
 
 .webDevProjectContainer {
     width: 100%;
@@ -195,7 +195,7 @@ body {
 
 .uxAppCardButton {
     cursor: pointer;
-    margin: 5px;
+    margin: 2px 6px;
 }
 
 .uxAppCardButtonImage {
