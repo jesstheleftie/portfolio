@@ -1,7 +1,7 @@
 /* Variables */
 :root {
     --navBarHeight: 65;
-    --footerHeight: 40;
+    --footerHeight: 200;
 }
 
 
@@ -16,7 +16,6 @@ body {
     width: 100vw;
     height: 100vh;
     /* border: 1px solid red; */
-    outline: 1px solid red;
     position: relative;
     overflow: auto;
 }
@@ -153,7 +152,7 @@ body {
 
 .footer {
     height: calc(var(--footerHeight) * 1px);
-    outline: 1px solid purple
+    border-top: 1px solid rgb(240, 240, 240)
 }
 
 
@@ -172,6 +171,7 @@ body {
 .technologyBoxContainer {
     display: flex;
     justify-content: space-evenly;
+    margin: 20px 0;
 
 }
 
@@ -183,8 +183,8 @@ body {
 }
 
 .technologyLogo {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
 }
 
 .webDevSection {
@@ -301,7 +301,6 @@ body {
 
 .descriptionContent {
     margin: 10px;
-
     font-size: 16px;
     font-weight: 200;
     z-index: 2;
@@ -526,6 +525,34 @@ body {
     max-width: 400px;
 }
 
+.footer {
+    margin-top: 20px;
+    padding: 0 7vw;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.03);
+}
+
+.introContactContainer {
+    padding-top: 10px;
+}
+
+
+.introTextSpacing {
+    padding: 10px 0;
+}
+
+.contactTitle {
+    color: var(--blackText);
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.contactText {
+    font-size: 16px;
+    color: var(--blackText);
+}
 
 @media (max-width: 800px) {
 
@@ -537,6 +564,11 @@ body {
 
     .uxAppCardButtonImage {
         max-width: 80vw;
+    }
+
+    .technologyLogo {
+        width: 50px;
+        height: 50px;
     }
 
 }
