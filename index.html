@@ -109,11 +109,11 @@
               </div>
             </div>
             <!-- Technologies -->
-            <div>
+            <div class="technologyContainer">
               <div class="descriptionTitle">TECHNOLOGIES & SKILLS</div>
               <div class="descriptionContent descriptionContentBold">
                 As a web developer, I frequently leverage a diverse set of
-                technologies to create efficient, scalable, and dynamic
+                technologies to create efficient, scalable and dynamic
                 applications.
               </div>
               <div class="technologyBoxContainer">
@@ -157,95 +157,172 @@
             </div>
             <!-- Web Dev Project Section -->
             <div class="webDevSection" id="webDevSection">
-              <div>Web Development</div>
+              <div class="descriptionTitle">WEB DEVELOPMENT</div>
+              <div class="descriptionContent descriptionContentBold">
+                This section showcases a range of web development projects, each
+                designed to highlight my skills in building responsive,
+                interactive and user-centered webapps.
+              </div>
+
               <!-- Webdev1 -->
               <div class="webDevProjectContainer">
-                <div class="webDevProjectDescriptionContainer">
-                  <div>Title</div>
+                <div class="webDevProjectDescriptionContainerLeft">
+                  <div class="webDevProjectTitle">Arcade Snake Game</div>
                   <div>
-                    <div>Project Name</div>
-                    <div>Project Description</div>
+                    <div class="webDevProjectName">
+                      Name: Classic Retro Snake Game
+                    </div>
+                    <div class="webDevProjectDescription">
+                      Description: Experience a modern, browser-based version of
+                      the classic Snake game, where you can compete for the
+                      highest score with multiple users. High scores are saved
+                      to local storage, allowing players to track and challenge
+                      their personal bests. Thoughtfully designed with UX
+                      principles, the game incorporates gamified elements and
+                      intuitive interactions to enhance the overall player
+                      experience and keep you engaged.
+                    </div>
                   </div>
-                  <div>Technology</div>
+                  <div class="webDevProjectName">
+                    Technology: HTML, CSS, JavaScript, DOM Manipulation, State
+                    Management, Event Handling
+                  </div>
 
-                  <div>
+                  <div class="webDevProjectButtonContainer">
                     <a
+                      class="squareButton introMore"
+                      id="contactButton2"
+                      target="_blank"
                       href="https://classic-retro-snake-game.surge.sh/"
-                      target="_blank"
                     >
-                      <span
-                        style="
-                          cursor: pointer;
-                          color: blue;
-                          text-decoration: underline;
-                        "
-                      >
-                        Launch
-                      </span>
-                    </a>
+                      Launch</a
+                    >
                     <a
+                      class="squareButton introMore"
+                      id="contactButton2"
+                      target="_blank"
                       href="https://github.com/jesstheleftie/snakegame"
-                      target="_blank"
                     >
-                      <span
-                        style="
-                          cursor: pointer;
-                          color: blue;
-                          text-decoration: underline;
-                        "
-                      >
-                        Github
-                      </span>
-                    </a>
+                      Github</a
+                    >
                   </div>
                 </div>
-                <div class="webDevProjectImage">Image</div>
+                <div class="webDevProjectImageContainer">
+                  <img
+                    class="webDevProjectImage"
+                    src="assets/stock_tablet.png"
+                  />
+                </div>
               </div>
+              <!-- Webdev2 -->
               <div class="webDevProjectContainer flexRev">
-                <div class="webDevProjectDescriptionContainer">
-                  <div>Title</div>
-                  <div>
-                    <div>Project Name</div>
-                    <div>Project Description</div>
+                <div class="webDevProjectDescriptionContainerRight">
+                  <div class="webDevProjectTitle">
+                    Stock Market Trading Simulation
                   </div>
-                  <div>Technology</div>
                   <div>
+                    <div class="webDevProjectName">Name: TradeFlow</div>
+                    <div class="webDevProjectDescription">
+                      Description: A dynamic training platform that enables
+                      users to simulate stock market trading. Utilizing a stock
+                      API and powerful technical analysis charting tools, this
+                      app provides an immersive, risk-free environment for users
+                      to practice and enhance their trading strategies.
+                    </div>
+                  </div>
+                  <div class="webDevProjectName">
+                    Technology: NodeJS, Express, ChartJS, MongoDB, Axios
+                  </div>
+
+                  <div class="webDevProjectButtonContainer">
                     <a
+                      class="squareButton introMore"
+                      id="contactButton2"
+                      target="_blank"
                       href="https://tradeflow-327c5044b0d5.herokuapp.com"
-                      target="_blank"
                     >
-                      <span
-                        style="
-                          cursor: pointer;
-                          color: blue;
-                          text-decoration: underline;
-                        "
-                      >
-                        Launch
-                      </span>
-                    </a>
+                      Launch</a
+                    >
                     <a
-                      href="https://github.com/jesstheleftie/tradeflow"
+                      class="squareButton introMore"
+                      id="contactButton2"
                       target="_blank"
+                      href="https://github.com/jesstheleftie/tradeflow"
                     >
-                      <span
-                        style="
-                          cursor: pointer;
-                          color: blue;
-                          text-decoration: underline;
-                        "
-                      >
-                        Github
-                      </span>
-                    </a>
+                      Github</a
+                    >
                   </div>
                 </div>
-                <div class="webDevProjectImage">Image</div>
+                <div class="webDevProjectImageContainer">
+                  <img
+                    class="webDevProjectImage"
+                    src="assets/stock_tablet.png"
+                  />
+                </div>
+              </div>
+              <!-- Webdev3 -->
+              <div class="webDevProjectContainer">
+                <div class="webDevProjectDescriptionContainerLeft">
+                  <div class="webDevProjectTitle">
+                    Satellite Tracking App *coming soon*
+                  </div>
+                  <div>
+                    <div class="webDevProjectName">Name: StellarTrack</div>
+                    <div class="webDevProjectDescription">
+                      Description: An innovative app that allows users to track
+                      satellites in real-time based on their location. By
+                      integrating a satellite API with interactive maps and
+                      built using React, the app provides a dynamic view of the
+                      sky, showing the satellites currently overhead. Users can
+                      easily explore satellite positions and gain insights into
+                      orbital paths, all personalized to their current
+                      geographical location.
+                    </div>
+                  </div>
+                  <div class="webDevProjectName">
+                    Technology: React, MapBox, NodeJS, MongoDB
+                  </div>
+
+                  <div class="webDevProjectButtonContainer">
+                    <a
+                      class="squareButton introMore squareButtonDisabled"
+                      id="contactButton2"
+                      target="_blank"
+                      style="pointer-events: none"
+                      href="#"
+                    >
+                      Launch</a
+                    >
+                    <a
+                      class="squareButton introMore squareButtonDisabled"
+                      id="contactButton2"
+                      target="_blank"
+                      style="pointer-events: none"
+                      href="#"
+                    >
+                      Github</a
+                    >
+                  </div>
+                </div>
+                <div class="webDevProjectImageContainer">
+                  <img
+                    class="webDevProjectImage"
+                    src="assets/stock_tablet.png"
+                  />
+                </div>
               </div>
             </div>
             <!-- UX Project Section -->
-            <div>
-              <div>User Experience/Interface (UX/UI)</div>
+            <div class="userExperienceContainer">
+              <div class="descriptionTitle">
+                USER EXPERIENCE & INTERFACE (UX/UI)
+              </div>
+              <div class="descriptionContent descriptionContentBold">
+                Here, I demonstrate how to create intuitive user experiences
+                through UX/UI design, combining research, wireframing,
+                prototyping and visual design to ensure both functionality and
+                aesthetic appeal.
+              </div>
               <div class="uxAppContainerRow">
                 <div
                   id="navButton_uxPage1"
