@@ -224,7 +224,7 @@ body {
 
 
 .webDevProjectContainer {
-    margin: 50px 0 80px 0;
+    margin: 60px 0 80px 0;
     width: 100%;
     /* max-height: 50vh; */
     display: flex;
@@ -288,7 +288,7 @@ body {
 
 
 .uxAppContainerRow {
-    margin-top: 20px;
+    margin-top: 5px;
     ;
     display: flex;
     justify-content: center;
