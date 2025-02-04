@@ -119,6 +119,20 @@ const scrollEvent = (elementId, top, target, style = "auto") => {
   });
 };
 
+document.addEventListener("mousemove", (e) => {
+  let screenWidth = window.innerWidth;
+  let mouseX = e.clientX;
+
+  let percentage = ((screenWidth - mouseX) / screenWidth) * 100; // Mouse position as percentage of screen width
+
+  document.querySelector(".cartoonImage").style.clipPath = `inset(0 ${
+    100 - percentage
+  }% 0 0)`;
+  document.querySelector(
+    ".realImage"
+  ).style.clipPath = `inset(0 0 0 ${percentage}%)`;
+});
+
 scrollEvent("myLogo", 0, null, "smooth");
 scrollEvent("navButton_home", 0, null, "auto");
 scrollEvent("navButton_uxPage1", 0, null, "smooth");
