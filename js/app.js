@@ -112,6 +112,7 @@ const scrollEvent = (elementId, top, target, style = "auto") => {
     }
     // with target element specified
     else {
+      console.log("target", target);
       document
         .getElementById(target)
         .scrollIntoView({ block: "start", behavior: "smooth" });
@@ -146,5 +147,7 @@ scrollEvent("navButton_uxPage1", 0, null, "smooth");
 scrollEvent("navButton_uxPage2", 0, null, "smooth");
 scrollEvent("navButton_uxPage3", 0, null, "smooth");
 scrollEvent("navButton_uxPage4", 0, null, "smooth");
+scrollEvent("cartoonHeroText", 0, "userExperienceContainer", "smooth");
+scrollEvent("realHeroText", 0, "webDevProjectContainer", "smooth");
 scrollEvent("navButton_about", 0, "blurpContainer", "smooth");
 scrollEvent("navButton_work", 0, "webDevSection", "smooth");
