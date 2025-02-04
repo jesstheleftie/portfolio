@@ -168,20 +168,23 @@ body {
 }
 
 .heroContainer {
-    height: 75vh;
+    /* height: 75vh; */
     position: relative;
     overflow: hidden;
-    width: 100vw;
+    height: 50vw;
+    max-height: 75vh;
 }
 
 .heroImage {
-    height: 65vh;
+    height: 100%;
+    /* width: 80vw; */
     /* Keep original height */
     position: absolute;
     left: 50%;
     top: 50%;
     /* Center the images */
     transform: translate(-50%, -50%);
+    aspect-ratio: 64/60;
 
     /* Ensure centering */
 }
@@ -206,6 +209,27 @@ body {
     clip-path: inset(0 100% 0 0);
     border-radius: 25%;
     /* Initially hidden */
+}
+
+.leftOverlay,
+.rightOverlay {
+    position: absolute;
+    top: 0;
+    width: 50vw;
+    /* Covers some space on both sides */
+    height: 100%;
+    /* Dark overlay */
+    pointer-events: none;
+    /* Prevent blocking interaction */
+    transition: opacity 0.2s ease-in-out;
+}
+
+.leftOverlay {
+    left: 50%;
+}
+
+.rightOverlay {
+    right: 50%;
 }
 
 .blurpContainer {
