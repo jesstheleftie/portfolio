@@ -133,8 +133,8 @@ document.addEventListener("mousemove", (e) => {
   ).style.clipPath = `inset(0 0 0 ${percentage}%)`;
 
   // Opacity logic: Both full between 33% - 66%
-  let leftOpacity = percentage >= 55 ? Math.max(0, (100 - percentage) / 55) : 1;
-  let rightOpacity = percentage <= 45 ? Math.max(0, percentage / 45) : 1;
+  let leftOpacity = percentage >= 52 ? Math.max(0, (100 - percentage) / 52) : 1;
+  let rightOpacity = percentage <= 48 ? Math.max(0, percentage / 48) : 1;
 
   document.querySelector(".rightOverlay").style.opacity = leftOpacity;
   document.querySelector(".leftOverlay").style.opacity = rightOpacity;
