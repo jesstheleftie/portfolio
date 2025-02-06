@@ -169,13 +169,25 @@ body {
 
 .heroContainer {
     /* height: 75vh; */
-    margin-top: 5vw;
+    margin-top: 3vw;
     position: relative;
     overflow: hidden;
-    height: 50vw;
+    height: 40vw;
     max-height: 75vh;
     display: flex;
     justify-content: space-between;
+}
+
+.myselfBlurp {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3vw;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-family: 'Nunito', 'Courier New', Courier, monospace;
+
 }
 
 .heroImage {
@@ -215,46 +227,49 @@ body {
 }
 
 .rightOverlay {
-    /* position: absolute; */
+    position: absolute;
     top: 0;
-    width: 17vw;
+    width: 20vw;
     /* Covers some space on both sides */
     height: 100%;
     /* Dark overlay */
     /* Prevent blocking interaction */
     transition: opacity 0.2s ease-in-out;
     /* border: 1px solid red */
-}
-
-.leftOverlay {
-    /* position: absolute; */
-    top: 0;
-    width: 17vw;
-    /* Covers some space on both sides */
-    height: 100%;
-    /* Dark overlay */
-    /* Prevent blocking interaction */
-    transition: opacity 0.2s ease-in-out;
-    /* border: 1px solid red */
-}
-
-.leftOverlay {
-    left: 0%;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    margin-left: 5vw;
-    cursor: pointer;
-}
-
-.rightOverlay {
     right: 0%;
     display: flex;
     align-items: center;
     justify-content: start;
-    margin-right: 5vw;
+    margin-right: 4vw;
     cursor: pointer;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-family: 'Nunito', 'Courier New', Courier, monospace;
+
 }
+
+.leftOverlay {
+    position: absolute;
+    top: 0;
+    width: 20vw;
+    /* Covers some space on both sides */
+    height: 100%;
+    /* Dark overlay */
+    /* Prevent blocking interaction */
+    transition: opacity 0.2s ease-in-out;
+    /* border: 1px solid red */
+    left: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-left: 3vw;
+    cursor: pointer;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-family: 'Nunito', 'Courier New', Courier, monospace;
+
+}
+
 
 .heroText {
     font-weight: 600;
@@ -264,7 +279,7 @@ body {
 .heroDescription {
 
     font-weight: 300;
-    font-size: clamp(5px, 2vw, 12px)
+    font-size: clamp(5px, 2vw, 16px)
 }
 
 .blurpContainer {
@@ -310,6 +325,17 @@ body {
     margin-top: var(--sectionMarginTop);
 }
 
+.heroShadow {
+
+    margin: 3vw auto 0 auto;
+    height: 1px;
+    background: transparent;
+    /* Try increasing this */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 1);
+    /* Increase spread and opacity */
+}
+
+
 .webDevSection {
     margin-top: 5vw;
     width: 100%;
@@ -317,7 +343,7 @@ body {
 
 
 .webDevProjectContainer {
-    margin: 60px 0 80px 0;
+    margin: 10vw 0 10vw 0;
     width: 100%;
     /* max-height: 50vh; */
     display: flex;
