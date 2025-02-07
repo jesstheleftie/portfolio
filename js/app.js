@@ -138,12 +138,24 @@ document.addEventListener("mousemove", (e) => {
     ".realImage"
   ).style.clipPath = `inset(0 0 0 ${percentage}%)`;
 
-  // Opacity logic: Both full between 33% - 66%
+  // Opacity logic
   let leftOpacity = percentage >= 52 ? Math.max(0, (100 - percentage) / 52) : 1;
   let rightOpacity = percentage <= 48 ? Math.max(0, percentage / 48) : 1;
 
   document.querySelector(".rightOverlay").style.opacity = leftOpacity;
   document.querySelector(".leftOverlay").style.opacity = rightOpacity;
+
+  // **Transform Scale Logic (1 to 1.25 instead of 1 to 1.5)**
+  let scaleFactor = 0.25; // Adjusted scaling range
+  let scaleLeft = 1 + Math.max(0, (50 - percentage) / 50) * scaleFactor; // Grows when moving left
+  let scaleRight = 1 + Math.max(0, (percentage - 50) / 50) * scaleFactor; // Grows when moving right
+
+  document.querySelector(
+    ".leftOverlay"
+  ).style.transform = `scale(${scaleRight})`;
+  document.querySelector(
+    ".rightOverlay"
+  ).style.transform = `scale(${scaleLeft})`;
 });
 
 scrollEvent("myLogo", 0, null, "smooth");
