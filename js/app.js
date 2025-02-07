@@ -105,8 +105,13 @@ const scrollEvent = (elementId, top, target, style = "auto") => {
     }
     // Normal but without target, goes to parameter 'top'
     else if (!target) {
+      let _top = top;
+      if (top === "bottom") {
+        _top = appContainer.scrollHeight || 0;
+      }
+
       appContainer.scrollTo({
-        top: top,
+        top: _top,
         behavior: style,
       });
     }
@@ -142,12 +147,13 @@ document.addEventListener("mousemove", (e) => {
 });
 
 scrollEvent("myLogo", 0, null, "smooth");
-scrollEvent("navButton_home", 0, null, "auto");
+scrollEvent("navButton_home", 0, null, "smooth");
 scrollEvent("navButton_uxPage1", 0, null, "smooth");
 scrollEvent("navButton_uxPage2", 0, null, "smooth");
 scrollEvent("navButton_uxPage3", 0, null, "smooth");
 scrollEvent("navButton_uxPage4", 0, null, "smooth");
 scrollEvent("cartoonHeroText", 0, "userExperienceContainer", "smooth");
 scrollEvent("realHeroText", 0, "webDevSection", "smooth");
-scrollEvent("navButton_about", 0, "blurpContainer", "smooth");
+// scrollEvent("navButton_about", 0, "blurpContainer", "smooth");
 scrollEvent("navButton_work", 0, "webDevSection", "smooth");
+scrollEvent("navButton_contact", "bottom", null, "smooth");
