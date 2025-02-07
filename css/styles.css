@@ -10,6 +10,7 @@
 body {
     margin: 0;
     user-select: none;
+    background: rgb(255, 255, 250);
     font-family: 'Poppins', sans-serif;
 }
 
