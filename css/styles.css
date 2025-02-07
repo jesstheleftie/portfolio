@@ -901,4 +901,8 @@ body {
         margin: -50px 0px 0 50px;
     }
 
+    .uxAppContainerRow {
+        margin: 0
+    }
+
 }
