@@ -395,7 +395,7 @@ body {
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
-    padding: 10px 0
+    padding: 1vw 0
 }
 
 .webDevProjectButtonContainer {
@@ -798,16 +798,67 @@ body {
         padding: 0
     }
 
+    .webDevSection {
+        font-size: 10px;
+    }
+
+
 
 }
 
 
 @media (max-width:480px) {
-
-
     .navButton {
         padding: 0 5px;
         font-size: 12px
+    }
+
+    .descriptionTitle {
+        font-size: 14px;
+    }
+
+    .descriptionContent {
+        font-size: 12px;
+    }
+
+    .technologyContainerTitle {
+        font-size: 14px;
+    }
+
+    .descriptionContent {
+        font-size: 12px;
+
+    }
+
+    .webDevProjectTitle {
+        font-size: 14px;
+
+    }
+
+    .webDevProjectName {
+
+        font-size: 12px;
+    }
+
+    .webDevProjectDescription {
+        font-size: 12px;
+
+    }
+
+    .squareButton {
+        font-size: 14px;
+    }
+
+    .contactTitle {
+        font-size: 14px;
+    }
+
+    .contactText {
+        font-size: 12px;
+    }
+
+    .introTextSpacing {
+        padding: 2px 0
     }
 
 }
